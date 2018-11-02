@@ -9,8 +9,9 @@ namespace Midterm
         public string LastName {get; set;}
        
     
-        public override string ToString(){
-            return this.AuthorID + ": " + this.FirstName;
+        public override string ToString()
+            {
+	            return $"{this.AuthorID} {this.FirstName}";
+            }
         }
     }
-}

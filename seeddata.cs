@@ -34,6 +34,8 @@ namespace Midterm
                         }
                     };
 
+                        context.Author.AddRange(author);
+                        context.SaveChanges();
 
                 if(!context.Book.Any()) {
                     List<Book> book = new List<Book>() {
@@ -64,13 +66,9 @@ namespace Midterm
 
                     context.Book.AddRange(book);  
                     context.SaveChanges();  
-                                                                
-
-                }    
-                    context.Author.AddRange(author);
-                    context.SaveChanges();
                 }
             } 
         }
     }
+}
 }

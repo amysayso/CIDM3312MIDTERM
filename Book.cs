@@ -16,8 +16,9 @@ namespace Midterm
 
 
 
-        public override string ToString(){
-            return this.BookID + " - " + this.Title;
+        public override string ToString()
+{
+	    return $"{this.BookID} {this.Title} {this.Pages}";
+}
         }
     }
-}
